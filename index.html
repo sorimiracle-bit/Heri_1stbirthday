@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>해리의 첫 번째 생일</title>
+<meta name="description" content="2026년 11월 1일(일) 오후 4시 30분 · 소르티르 송파 — 해리의 첫 번째 생일에 초대합니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="신해리 첫 번째 생일에 초대합니다">
+<meta property="og:description" content="2026. 11. 1 (일) 오후 4:30 · 소르티르 송파">
+<meta property="og:image" content="https://sorimiracle-bit.github.io/Heri_1stbirthday/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://sorimiracle-bit.github.io/Heri_1stbirthday/">
+<meta name="theme-color" content="#F6F2E5">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F2E5; --paper:#FBF8EF; --sage:#7C9070; --sage-d:#56664D; --sage-l:#DDE3D0;
+    --ink:#4A4F42; --muted:#80857A; --line:#E3DDC8; --map:#F1EAD5; --pink:#E9B9B0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:#E9E4D3;color:var(--ink);font-family:'Gowun Dodum',system-ui,sans-serif;line-height:1.7;word-break:keep-all}
+  .wrap{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;overflow:hidden;box-shadow:0 0 40px rgba(80,70,40,.08)}
+  section{padding:56px 24px;position:relative}
+  .script{font-family:'Caveat',cursive;color:var(--sage);letter-spacing:.5px}
+  .serif{font-family:'Gowun Batang',serif}
+  h2{font-family:'Gowun Batang',serif;font-weight:700;font-size:20px;color:var(--sage-d);text-align:center;margin-bottom:4px}
+  .eyebrow{display:block;text-align:center;font-family:'Caveat',cursive;font-size:22px;color:var(--sage);margin-bottom:2px}
+  .divider{display:flex;align-items:center;justify-content:center;gap:12px;margin:22px auto;color:var(--sage)}
+  .divider::before,.divider::after{content:"";height:1px;width:70px;background:var(--line)}
+
+  /* Hero */
+  .hero{padding:44px 24px 40px;text-align:center;isolation:isolate}
+  .hero .top{font-family:'Caveat',cursive;font-size:28px;color:var(--sage);letter-spacing:2px}
+  .hero .sub{font-size:15px;color:var(--muted);margin-top:2px}
+  .frame{position:relative;width:78%;margin:28px auto 0;aspect-ratio:3/4}
+  .frame .blob{position:absolute;inset:-14px -18px;background:var(--sage-l);border-radius:48% 52% 46% 54%/55% 50% 50% 45%;opacity:.75}
+  .frame img{position:relative;width:100%;height:100%;object-fit:cover;object-position:50% 22%;border-radius:999px 999px 24px 24px;border:6px solid var(--paper);box-shadow:0 10px 30px rgba(86,102,77,.18)}
+  .frame .balloon{position:absolute;left:-30px;top:30px;width:86px;transform:rotate(-10deg)}
+  .frame .hb{position:absolute;right:-26px;bottom:40px;font-family:'Caveat',cursive;font-size:24px;line-height:1.05;color:var(--sage-d);background:var(--paper);padding:10px 12px;border-radius:14px;transform:rotate(6deg);box-shadow:0 4px 14px rgba(0,0,0,.06)}
+  .ribbon{display:inline-block;isolation:isolate;z-index:0;margin-top:34px;background:var(--sage);color:#fff;font-family:'Caveat',cursive;font-size:30px;padding:2px 34px;position:relative;letter-spacing:2px}
+  .ribbon::before,.ribbon::after{content:"";position:absolute;top:8px;border:21px solid var(--sage-d);z-index:-1}
+  .ribbon::before{left:-26px;border-left-color:transparent}
+  .ribbon::after{right:-26px;border-right-color:transparent}
+  .name{font-family:'Gowun Batang',serif;font-weight:700;font-size:44px;color:var(--sage-d);letter-spacing:6px;margin-top:10px}
+  .tagline{font-size:17px;margin-top:4px}
+  .when{margin-top:18px;font-size:15px;color:var(--muted)}
+
+  /* Greeting */
+  .greet{text-align:center;background:var(--paper)}
+  .greet p{font-family:'Gowun Batang',serif;font-size:16px;line-height:2.1}
+  .greet .sign{margin-top:22px;font-size:15px;color:var(--muted)}
+  .greet .sign b{color:var(--sage-d);font-weight:700}
+
+  /* Info */
+  .info-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:24px;text-align:center}
+  .info-grid > div{padding:4px 6px}
+  .info-grid > div + div{border-left:1px solid var(--line)}
+  .info-grid svg{width:30px;height:30px;color:var(--sage)}
+  .info-grid .k{font-size:13px;color:var(--muted);margin-top:4px}
+  .info-grid .v{font-size:15px;margin-top:2px;line-height:1.45}
+  .info-grid .v small{display:block;font-size:12px;color:var(--muted)}
+  .note{margin-top:28px;background:var(--paper);border:1px dashed #CBD3BD;border-radius:18px;padding:16px 18px;display:flex;gap:14px;align-items:center;font-size:14px;line-height:1.65}
+  .note svg{flex:none;width:44px;height:44px}
+
+  /* Calendar */
+  .cal{margin:30px auto 0;max-width:320px;background:var(--paper);border-radius:20px;padding:20px 18px 14px}
+  .cal .m{text-align:center;font-family:'Gowun Batang',serif;font-weight:700;color:var(--sage-d);font-size:17px;margin-bottom:10px}
+  .cal table{width:100%;border-collapse:collapse;text-align:center;font-size:14px}
+  .cal th{font-weight:400;color:var(--muted);font-size:12px;padding-bottom:6px}
+  .cal td{height:36px}
+  .cal .sun{color:#C47C6E}
+  .cal .day{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:50%;background:var(--sage);color:#fff}
+  .dday{text-align:center;margin-top:22px;font-size:15px}
+  .count{display:flex;justify-content:center;gap:10px;margin-top:12px}
+  .count div{background:var(--paper);border-radius:12px;width:62px;padding:8px 0;text-align:center}
+  .count b{display:block;font-family:'Gowun Batang',serif;font-size:22px;color:var(--sage-d);line-height:1.2}
+  .count span{font-size:11px;color:var(--muted)}
+  .dday em{font-style:normal;color:var(--sage-d);font-weight:700}
+
+  /* Map */
+  .loc{background:var(--paper)}
+  .venue-name{text-align:center;font-family:'Gowun Batang',serif;font-weight:700;font-size:18px;margin-top:14px}
+  .addr{text-align:center;font-size:14px;color:var(--muted)}
+  .map{margin-top:18px;border-radius:16px;overflow:hidden;background:var(--map);border:1px solid var(--line)}
+  .map img{display:block;width:100%;height:auto}
+  .btns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+  .btn{display:flex;align-items:center;justify-content:center;gap:6px;padding:11px 6px;border-radius:12px;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:inherit;font-size:13px;text-decoration:none;cursor:pointer}
+  .btn:active{transform:scale(.98)}
+  .btn i{width:16px;height:16px;border-radius:4px;display:inline-block;flex:none}
+  .copy-row{display:flex;justify-content:center;margin-top:10px}
+  .copy-row .btn{background:transparent;border:none;color:var(--sage-d);text-decoration:underline;text-underline-offset:3px;padding:4px}
+
+  .dir{margin-top:30px}
+  .dir h3{font-family:'Gowun Batang',serif;font-size:16px;color:var(--sage-d);display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .dir h3 svg{width:20px;height:20px}
+  .dir .block{padding:18px 0;border-top:1px solid var(--line)}
+  .dir p,.dir li{font-size:14px}
+  .dir ul{list-style:none}
+  .dir li{margin-top:8px}
+  .dir li b{display:block;font-weight:400;color:var(--sage-d)}
+  .tag{display:inline-block;font-size:12px;border-radius:999px;padding:1px 9px;margin-right:4px;color:#fff;vertical-align:1px}
+  .bus-num{color:var(--muted)}
+  .venue-row{display:flex;gap:14px;align-items:center;margin-top:6px}
+  .venue-row img{width:110px;border-radius:8px;border:4px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.08);transform:rotate(-2deg)}
+
+  .park img{width:100%;border-radius:12px;margin-top:10px;display:block}
+  .pill{display:inline-block;background:var(--sage-l);color:var(--sage-d);border-radius:8px;padding:2px 8px;font-size:13px}
+  .hl{background:linear-gradient(transparent 60%,#E7EAD9 60%);font-weight:700}
+
+  /* Footer */
+  .share{text-align:center}
+  .share .btn{display:inline-flex;width:auto;padding:12px 26px;background:var(--sage);border:none;color:#fff;font-size:15px;border-radius:999px}
+  footer{text-align:center;padding:30px 24px 48px;color:var(--muted);font-size:13px}
+  footer .script{font-size:26px;display:block}
+
+  .toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:rgba(74,79,66,.92);color:#fff;font-size:14px;padding:10px 18px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none;z-index:10}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  .leaf{position:absolute;color:var(--sage);opacity:.75;pointer-events:none}
+  .fade{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+  .fade.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}}
+  @media (max-width:360px){.name{font-size:38px}.info-grid .v{font-size:14px}.frame .hb{right:-12px}.frame .balloon{left:-14px;width:72px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- shared SVG defs -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="sprig" viewBox="0 0 120 120">
+        <path d="M10 110 C40 80 70 50 110 10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <g fill="currentColor">
+          <ellipse cx="30" cy="80" rx="13" ry="6" transform="rotate(-70 30 80)"/>
+          <ellipse cx="44" cy="92" rx="13" ry="6" transform="rotate(-10 44 92)"/>
+          <ellipse cx="52" cy="58" rx="13" ry="6" transform="rotate(-75 52 58)"/>
+          <ellipse cx="66" cy="70" rx="13" ry="6" transform="rotate(-15 66 70)"/>
+          <ellipse cx="75" cy="36" rx="12" ry="5.5" transform="rotate(-80 75 36)"/>
+          <ellipse cx="88" cy="46" rx="12" ry="5.5" transform="rotate(-20 88 46)"/>
+        </g>
+        <g fill="#fff" stroke="#E4DCC2" stroke-width=".8">
+          <circle cx="104" cy="14" r="5"/><circle cx="112" cy="20" r="5"/><circle cx="112" cy="8" r="5"/><circle cx="118" cy="15" r="4.5"/>
+        </g>
+        <circle cx="112" cy="14" r="3" fill="#F2CF7A"/>
+      </symbol>
+      <symbol id="heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.2 0 3.6 1.2 5.4 3.2 1.8-2 3.2-3.2 5.4-3.2 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="leaf" style="left:-10px;top:10px;width:110px;transform:scaleX(-1) rotate(-10deg)"><use href="#sprig"/></svg>
+    <svg class="leaf" style="right:-10px;top:18px;width:100px"><use href="#sprig"/></svg>
+    <div class="top">1st Birthday Party</div>
+    <div class="sub">소중한 사람들과 함께하는<br>우리 아기의 첫 번째 생일</div>
+
+    <div class="frame">
+      <div class="blob"></div>
+      <img src="heri.jpg" alt="해리 사진" fetchpriority="high">
+      <svg class="balloon" viewBox="0 0 100 150" aria-hidden="true">
+        <path d="M50 92 C20 72 4 52 8 32 C12 12 34 6 50 24 C66 6 88 12 92 32 C96 52 80 72 50 92z" fill="#8A9C7C"/>
+        <text x="50" y="56" text-anchor="middle" font-family="Caveat,cursive" font-size="28" fill="#fff">heri</text>
+        <path d="M50 92 C46 108 56 118 48 132 C44 140 50 146 52 150" fill="none" stroke="#8A9C7C" stroke-width="1.6"/>
+      </svg>
+      <div class="hb">Happy<br>1st Birthday</div>
+    </div>
+
+    <div class="ribbon">♥ heri ♥</div>
+    <div class="name">신해리</div>
+    <div class="tagline">해리의 첫 번째 생일을 축하해 주세요!</div>
+    <div class="when">2026. 11. 1 SUN · PM 4:30<br>소르티르 송파</div>
+  </section>
+
+  <!-- GREETING -->
+  <section class="greet fade">
+    <span class="eyebrow">Invitation</span>
+    <h2>초대합니다</h2>
+    <div class="divider"><svg width="14" height="14"><use href="#heart"/></svg></div>
+    <p>
+      작고 소중한 해리가 태어나<br>
+      어느덧 첫 번째 생일을 맞이했습니다.<br><br>
+      그동안 따뜻한 관심과 사랑으로<br>
+      해리를 지켜봐 주신 고마운 분들을 모시고<br>
+      작은 돌잔치를 열고자 합니다.<br><br>
+      바쁘시더라도 귀한 걸음 하시어<br>
+      해리의 앞날을 축복해 주세요.
+    </p>
+    <div class="sign">해리 아빠 · 엄마 드림</div>
+  </section>
+
+  <!-- INFO -->
+  <section class="fade">
+    <span class="eyebrow">Save the date</span>
+    <h2>돌잔치 안내</h2>
+    <div class="info-grid">
+      <div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M12 17.4s-2.6-1.6-3.2-3c-.4-1 .2-2.2 1.3-2.2.8 0 1.3.5 1.9 1.1.6-.6 1.1-1.1 1.9-1.1 1.1 0 1.7 1.2 1.3 2.2-.6 1.4-3.2 3-3.2 3z" fill="currentColor" stroke="none"/></svg>
+        <div class="k">날짜</div>
+        <div class="v">11월 1일 일요일<small>2026년</small></div>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+        <div class="k">시간</div>
+        <div class="v">오후 4시 30분</div>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+        <div class="k">장소</div>
+        <div class="v">소르티르 송파<small>송파구 한가람로20길 14</small></div>
+      </div>
+    </div>
+
+    <div class="cal">
+      <div class="m">2026. 11</div>
+      <table>
+        <thead><tr><th class="sun">일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr></thead>
+        <tbody>
+          <tr><td class="sun"><span class="day">1</span></td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+          <tr><td class="sun">8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+          <tr><td class="sun">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+          <tr><td class="sun">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+          <tr><td class="sun">29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="count" id="count" aria-live="polite">
+      <div><b id="cd-d">-</b><span>DAYS</span></div>
+      <div><b id="cd-h">-</b><span>HOUR</span></div>
+      <div><b id="cd-m">-</b><span>MIN</span></div>
+      <div><b id="cd-s">-</b><span>SEC</span></div>
+    </div>
+    <p class="dday" id="dday-text">해리의 첫 생일까지 <em>D-?</em></p>
+
+    <div class="note">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 20h24v10a10 10 0 0 1-10 10h-4A10 10 0 0 1 10 30z" fill="#fff" stroke="#8A9C7C" stroke-width="1.8"/><path d="M34 23h3a4 4 0 0 1 0 8h-3" fill="none" stroke="#8A9C7C" stroke-width="1.8"/><path d="M22 31s-3-1.8-3.6-3.4c-.4-1.1.3-2.4 1.5-2.4.9 0 1.4.5 2.1 1.2.7-.7 1.2-1.2 2.1-1.2 1.2 0 1.9 1.3 1.5 2.4C25 29.2 22 31 22 31z" fill="#8A9C7C" transform="translate(0 -1)"/><path d="M18 9c-2 3 2 4 0 7M24 7c-2 3 2 4 0 7M30 9c-2 3 2 4 0 7" fill="none" stroke="#C9CDBD" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div>돌잔치 시작 <b>15분 전</b>에 도착해서<br><b>1층</b>에서 다과와 커피를 드시면서 대기해 주세요.</div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="loc fade">
+    <span class="eyebrow">Location</span>
+    <h2>오시는 길</h2>
+    <div class="venue-name">소르티르 송파 <span style="font-size:13px;color:var(--muted);font-weight:400">SORTIR Third branch</span></div>
+    <div class="addr">서울특별시 송파구 한가람로20길 14</div>
+
+    <div class="map"><img src="map.jpg" alt="소르티르 송파 약도: 천호역 10번 출구에서 직진 후 좌회전, 풍납토성 옆" loading="lazy"></div>
+
+    <div class="btns">
+      <a class="btn" href="https://map.naver.com/p/search/%EC%86%8C%EB%A5%B4%ED%8B%B0%EB%A5%B4%20%EC%86%A1%ED%8C%8C" target="_blank" rel="noopener"><i style="background:#03C75A"></i>네이버지도</a>
+      <a class="btn" href="https://map.kakao.com/link/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%ED%95%9C%EA%B0%80%EB%9E%8C%EB%A1%9C20%EA%B8%B8%2014" target="_blank" rel="noopener"><i style="background:#FEE500"></i>카카오맵</a>
+      <a class="btn" href="#" id="tmap"><i style="background:linear-gradient(135deg,#E5004F,#0064FF)"></i>티맵</a>
+    </div>
+    <div class="copy-row"><button class="btn" data-copy="서울특별시 송파구 한가람로20길 14">주소 복사하기</button></div>
+
+    <div class="dir">
+      <div class="block">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 11h14M8.5 21l1.5-3M15.5 21l-1.5-3"/><circle cx="9" cy="14.5" r=".8" fill="currentColor"/><circle cx="15" cy="14.5" r=".8" fill="currentColor"/></svg>지하철</h3>
+        <div class="venue-row">
+          <p><span class="tag" style="background:#996CAC">5호선</span><span class="tag" style="background:#E6186C">8호선</span><br><b>천호역 10번 출구</b>에서 직진 후 좌회전<br><span style="color:var(--muted)">(도보 3~5분)</span></p>
+          <img src="venue.jpg" alt="소르티르 송파 건물 외관" loading="lazy">
+        </div>
+      </div>
+
+      <div class="block">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 10h16M8 21v-3M16 21v-3"/><circle cx="8" cy="14" r=".8" fill="currentColor"/><circle cx="16" cy="14" r=".8" fill="currentColor"/></svg>버스</h3>
+        <ul>
+          <li><b>풍납토성·천호역 10번 출구</b><span class="bus-num">3324, 4318</span></li>
+          <li><b>천호역·풍납시장</b><span class="bus-num">340, 341, 342, 3411, 3324, 3321, 3318, 3214, 112, 30, 16</span></li>
+          <li><b>천호역(중)</b><span class="bus-num">1-4, 23, 130, 370, 1113</span></li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16v-4l2-5h12l2 5v4z"/><path d="M4 12h16M6 16v2M18 16v2"/><circle cx="8" cy="14" r=".8" fill="currentColor"/><circle cx="16" cy="14" r=".8" fill="currentColor"/></svg>자동차</h3>
+        <ul>
+          <li><b>올림픽대로에서 오시는 경우</b>올림픽대로에서 천호사거리 방면으로 주행 후, 시티극동아파트 후문 방향으로 진입</li>
+          <li><b>천호대교에서 오시는 경우</b>천호대교를 건너 올림픽로로 우회전 후, 바람드리길로 진입</li>
+        </ul>
+      </div>
+
+      <div class="block park">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M10 17V7h3a3 3 0 0 1 0 6h-3"/></svg>주차 안내</h3>
+        <ul>
+          <li><b>전용주차장</b>직계 가족을 우선하여 <span class="hl">최대 5대까지 건물 앞 주차</span>가 가능합니다. 행사 당일 주차 요원이 안내해 드립니다.</li>
+          <li><b>공영주차장 (도보 5분)</b>친지 및 지인분들께서는 <span class="hl">풍납시장 공유주차장</span>을 이용 부탁드립니다.<br>
+            <span style="color:var(--muted)">서울 송파구 풍납동 141-1</span>
+            <button class="btn" data-copy="서울 송파구 풍납동 141-1" style="display:inline;padding:0 4px;border:none;background:none;color:var(--sage-d);text-decoration:underline;font-size:13px">복사</button>
+          </li>
+        </ul>
+        <img src="parking.jpg" alt="풍납시장 공유주차장" loading="lazy">
+        <p style="margin-top:12px">파킹프렌즈 무인 주차장으로, 키오스크를 통해 입·출차하시면 됩니다. 행사가 끝나고 스태프에게 말씀 주시면 <b>주차비를 지원</b>해 드립니다.</p>
+        <p style="margin-top:8px"><span class="pill">주차 요금 30분당 600원</span> <span class="pill">차량 1대당 3,000원 지원</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHARE -->
+  <section class="share fade">
+    <span class="eyebrow">Thank you</span>
+    <h2>함께해 주셔서 감사합니다</h2>
+    <div class="divider"><svg width="14" height="14"><use href="#heart"/></svg></div>
+    <button class="btn" id="share">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+      초대장 공유하기
+    </button>
+  </section>
+
+  <footer>
+    <span class="script">Happy 1st Birthday, Heri</span>
+    2026. 11. 01
+  </footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  // Countdown to 2026-11-01 16:30 KST
+  (function(){
+    var target = new Date('2026-11-01T16:30:00+09:00').getTime();
+    var el = {d:document.getElementById('cd-d'),h:document.getElementById('cd-h'),m:document.getElementById('cd-m'),s:document.getElementById('cd-s')};
+    var txt = document.getElementById('dday-text'), box = document.getElementById('count');
+    function pad(n){return n<10?'0'+n:''+n}
+    function tick(){
+      var diff = target - Date.now();
+      // Calendar-day D-day in KST
+      var kstNow = new Date(Date.now() + 9*3600e3); kstNow.setUTCHours(0,0,0,0);
+      var dd = Math.round((Date.UTC(2026,10,1) - kstNow.getTime())/864e5);
+      if (diff <= 0){
+        box.style.display='none';
+        txt.innerHTML = dd===0 ? '오늘은 <em>해리의 첫 생일</em>입니다 🎉' : '해리의 첫 생일을 함께해 주셔서 감사합니다';
+        return;
+      }
+      var s = Math.floor(diff/1000);
+      el.d.textContent = Math.floor(s/86400);
+      el.h.textContent = pad(Math.floor(s%86400/3600));
+      el.m.textContent = pad(Math.floor(s%3600/60));
+      el.s.textContent = pad(s%60);
+      txt.innerHTML = '해리의 첫 생일까지 <em>' + (dd===0 ? 'D-DAY' : 'D-'+dd) + '</em>';
+      setTimeout(tick, 1000);
+    }
+    tick();
+  })();
+
+  // Toast + copy
+  var toastEl = document.getElementById('toast'), tt;
+  function toast(msg){ toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(tt); tt = setTimeout(function(){toastEl.classList.remove('show')}, 1800); }
+  function copy(text, msg){
+    function fallback(){
+      var ta=document.createElement('textarea'); ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try{document.execCommand('copy'); toast(msg);}catch(e){prompt('복사해 주세요', text);}
+      document.body.removeChild(ta);
+    }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(function(){toast(msg)}, fallback);
+    else fallback();
+  }
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){ copy(b.getAttribute('data-copy'), '주소가 복사되었습니다'); });
+  });
+
+  // Share
+  document.getElementById('share').addEventListener('click', function(){
+    var data = {title:'신해리 첫 번째 생일에 초대합니다', text:'2026. 11. 1 (일) 오후 4:30 · 소르티르 송파', url: location.href.split('#')[0]};
+    if (navigator.share) navigator.share(data).catch(function(){});
+    else copy(data.url, '링크가 복사되었습니다');
+  });
+
+  // T map: open app search on mobile, otherwise fall back to Naver
+  (function(){
+    var a = document.getElementById('tmap');
+    a.addEventListener('click', function(e){
+      var mobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
+      e.preventDefault();
+      if (mobile) location.href = 'tmap://search?name=' + encodeURIComponent('소르티르 송파');
+      else window.open('https://map.naver.com/p/search/' + encodeURIComponent('소르티르 송파'), '_blank');
+    });
+  })();
+
+  // Reveal on scroll
+  (function(){
+    var els = document.querySelectorAll('.fade');
+    if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('in')}); return; }
+    var io = new IntersectionObserver(function(ents){ ents.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} }); }, {threshold:.12});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+</body>
+</html>
